@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Exo 2', sans-serif;
+  font-size: 16px;
+}
+
+body {
+  background-color:lavender;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.page-header {
+  font-size: 40px;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 35px;
+}
+
+.about-me {
+  margin-bottom: 35px;
+}
+
+.about-me__foto-and-info {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .about-me__foto-and-info {
+    flex-direction: column;
+  }
+}
+
+.about-me__foto {
+  border-radius: 50%;
+  max-width: 250px;
+  box-shadow: 0 0 20px 5px #ccf;
+}
+
+@media (max-width: 768px) {
+  .about-me__foto {
+    margin-bottom: 30px;
+  }
+}
+
+.about-me__info {
+  margin-left: 30px;
+  border-left: 1px solid gray;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .about-me__info {
+    border-left: none;
+    border-top: 1px solid gray;
+    margin: 0 auto;
+    max-width: 95%;
+  }
+}
+
+.about-me__field-name {
+  font-size: 24px;
+  color: #999;
+  border-bottom: 1px dashed #ccc;
+}
+
+.about-me__field-content {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.card {
+  margin-bottom: 50px;
+}
+
+@media (max-width: 768px) {
+  .card {
+    margin: 0 auto 30px;
+    max-width: 95%;
+  }
+}
+
+.section-header {
+  font-size: 28px;
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: 30px;
+}
+
+.goals__list {
+  max-width: 770px;
+  margin: 0 auto;
+  padding-left: 35px;
+}
+
+.goals__item {
+  font-size: 18px;
+  color: #333;
+  padding: 5px;
+}
+
+.learning-time__list {
+  margin: 0 auto;
+  list-style: none;
+  max-width: 400px;
+}
+
+.learning-time__item {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dotted black;
+  padding: 5px;
+}
+
+.learning-time__item:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.learning-time__day,
+.learning-time__time {
+  font-size: 18px;
+  color: #333;
+  padding: 5px;
+}
+
+.courses__table {
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+.courses__table th {
+  font-size: 20px;
+  border-bottom: 1px solid #000;
+  color: #333;
+  padding: 5px;
+}
+
+.courses__table td,
+.courses__link {
+  font-size: 20px;
+  padding: 20px;
+  color: #000;
+  text-align: center;
+  transition: color 300ms ease;
+}
+
+@media (max-width: 768px) {
+  .courses__table th,
+  .courses__table td,
+  .courses__link {
+    font-size: 16px;
+    padding: 5px;
+  }
+}
+
+.courses__link:hover {
+  color: #999;
+}
+
+.contacts__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 400px;
+}
+
+.contacts__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contacts__icon {
+  max-width: 60px;
+}
+
+.contacts__link {
+  color: #333;
+  text-decoration: none;
+  transition: transform 300ms ease;
+}
+
+.contacts__link:hover {
+  transform: scale(1.05);
+  color: #000;
+}
+
+.contacts__title {
+  padding-top: 10px;
+  font-size: 18px;
+}
